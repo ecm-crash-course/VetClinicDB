@@ -23,7 +23,7 @@ public class VetClinicController {
 		return service.listAll();
     }
 
-    @PostMapping("/animals")
+    @PostMapping("/add")
     Animal createOrSaveEmployee(@RequestBody Animal newAnimal) {
         return service.insertAnimal(newAnimal);
     }
