@@ -24,12 +24,14 @@ public final class Animal {
 
     private String kind;
     private String first_name;
-    private String owner_mail;
+    
+    @Column(name="owner_email")
+    private String email;
 
-    public Animal(String _kind, String _first_name, String _owner_mail){
+    public Animal(String _kind, String _first_name, String _owner_email){
         this.kind = _kind;
         this.first_name = _first_name;
-        this.owner_mail = _owner_mail;
+        this.email = _owner_email;
     }
 
 }
